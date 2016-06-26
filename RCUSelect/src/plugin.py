@@ -153,7 +153,7 @@ def system(menuid):
         
 def Plugins(**kwargs):
 	boxime = HardwareInfo().get_device_name()
-	if boxime == 'wetekplay' :
+	if boxime == 'wetekplay' or boxime == 'wetekplayplus' :
 		return \
 			[PluginDescriptor(name=_("RCU Select"), where = PluginDescriptor.WHERE_MENU, fnc=system),
 			]
